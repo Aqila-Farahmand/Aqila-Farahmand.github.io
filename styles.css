@@ -336,9 +336,16 @@ section {
 
 /* Skills Section */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
+}
+
+.skills-grid .skill-category {
+    flex: 0 1 calc(33.333% - 1.34rem);
+    min-width: 300px;
+    max-width: 100%;
 }
 
 .skill-category {
@@ -465,9 +472,16 @@ section {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
+}
+
+.projects-grid .project-card {
+    flex: 0 1 calc(33.333% - 1.34rem);
+    min-width: 320px;
+    max-width: 100%;
 }
 
 .project-card {
@@ -874,8 +888,16 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .skills-grid .skill-category {
+        flex: 0 1 100%;
+    }
+
     .blog-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projects-grid .project-card {
+        flex: 0 1 100%;
     }
 
     .contact-cards {
