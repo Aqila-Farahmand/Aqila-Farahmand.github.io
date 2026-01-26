@@ -1,0 +1,33 @@
+[
+    {
+        "id": "1",
+        "title": "My experiences of living in different countries",
+        "excerpt": "Reflecting on my international journey, the challenges I've faced, and the lessons learned from living in 5 different countries and cultures.",
+        "contentFile": "posts/post-1.html",
+        "date": "2024-12-15",
+        "author": "Aqila Farahmand",
+        "tags": [
+            "personal",
+            "travel",
+            "culture",
+            "growth"
+        ],
+        "image": ""
+    },
+    {
+        "id": "2",
+        "title": "Exploring LLMs use cases in medical domain",
+        "excerpt": "Insights from my research on using Retrieval-Augmented Generation with open Small Language Models for medical chatbots.",
+        "contentFile": "posts/post-2.html",
+        "date": "2024-12-10",
+        "author": "Aqila Farahmand",
+        "tags": [
+            "research",
+            "AI",
+            "healthcare",
+            "RAG",
+            "LLM"
+        ],
+        "image": ""
+    }
+]
