@@ -1,43 +1,41 @@
-<p>In my recent research project, I explored the fascinating intersection of Large Language Models (LLMs) and
-    healthcare. Specifically, I worked on using Retrieval-Augmented Generation (RAG) with open Small Language Models
-    (SLMs) to create effective medical chatbots.</p>
+<p>In my recent research project, I explored the fascinating intersection of Large Language Models (LLMs) and use cases
+    in medical domain.
+    Specifically, I was co-authored this research project, where we performed a feasibility study of using RAG together
+    with open SLMs for hypertension management chatbots.
+    SLMs are small language models that are trained on a specific domain and can be used for a specific task.
+    The question is why SLM istead of LLM?
+    The answer is that SLMs are more efficient in terms of resource requirements and cost-effective than LLMs, and they
+    are more suitable for resource-constrained devices such as mobile phones.
 
-<h3>Why RAG for Medical Applications?</h3>
+</p>
 
-<p>Medical applications require accuracy, reliability, and up-to-date information. Traditional LLMs, while powerful, can
-    sometimes hallucinate or provide outdated information. RAG solves this by combining the generative capabilities of
-    LLMs with a knowledge base that can be updated with the latest medical research and guidelines.</p>
+<h3>Why RAG?</h3>
 
-<p>The healthcare domain is particularly sensitive because incorrect information can have serious consequences. RAG
-    allows us to ground the model's responses in verified medical sources, significantly reducing the risk of
-    misinformation.</p>
+<p> In medical domain for example, where accuracy, reliability, and up-to-date information is crucial, traditional LLMs,
+    while powerful, hallucinate, and might be biased, or provide outdated information. RAG tries to solve this by
+    combining the generative
+    capabilities of LLMs with a knowledge base, such as documents, web pages, or other sources of information.
+    This way, the LLM can generate responses based on the most relevant information from the knowledge base.
+</p>
 
-<h3>Challenges and Solutions</h3>
+<h3>What if we could have private LLMs rather than using the public ones?</h3>
 
-<p>One of the main challenges was ensuring that the chatbot provides accurate medical information while maintaining
-    conversational quality. We addressed this by carefully curating the knowledge base and implementing strict retrieval
-    mechanisms.</p>
+<p>The answer is yes, we can have private models that are running locally on your own devices.
+    we explored this idea in our recent research project, called "MedicoAI", a cross-platform application that runs a
+    small language model (SLM) on resource-constrained devices such as mobile phones, with offline functionality.
+    Users can interact with the model that is running locally on their own devices, without the need to connect to the
+    internet.
+</p>
 
-<p>Another challenge was working with resource-constrained devices. This is where Small Language Models became crucial -
-    they allow for offline functionality while still providing meaningful interactions. This is particularly important
-    for healthcare applications in areas with limited internet connectivity.</p>
+<h3>How it works?</h3>
+<p>Running LLM locally, entirely offline on mobile devices is feasible using highly optimized
+    libraries such as MediaPipe, llama.cpp, and Apples MLX, which are specifically designed for on-device
+    LLM inference.
+</p>
 
-<h3>Technical Implementation</h3>
-
-<p>Our implementation involved several key components:</p>
-
-<ul>
-    <li>Careful selection and preprocessing of medical documents</li>
-    <li>Efficient vector embeddings for semantic search</li>
-    <li>Fine-tuning of small language models for medical context</li>
-    <li>Robust evaluation metrics to ensure accuracy</li>
-</ul>
-
-<h3>Results and Future Work</h3>
-
-<p>Our research showed promising results in using RAG-enhanced SLMs for hypertension management. The system was able to
-    provide accurate, contextually relevant responses while running efficiently on mobile devices.</p>
-
-<p>This work opens up exciting possibilities for making healthcare more accessible, especially in areas with limited
-    internet connectivity. Future directions include expanding to other medical domains and improving the model's
-    ability to handle complex multi-turn conversations.</p>
+<h3>How to evaluate the model?</h3>
+<p>
+    LLMs are not reliable, and they might hallucinate, or provide outdated information.
+    To evalaute the performance of the model, we use metrics such as accuracy, precision, recall, F1 score but these
+    metrics are not enough.
+    We need a human in the loop to assess the model's performance.</p>
